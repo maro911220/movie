@@ -1,13 +1,13 @@
 # 영화 정보 페이지
 
-Next.js로 구축된 웹 애플리케이션으로, 사용자가 영화를 탐색하고, 세부 정보를 확인하며, 다양한 기준으로 검색하고 필터링할 수 있습니다. 이 프로젝트는 TMDb API를 활용하여 풍부한 영화 탐색 경험을 제공합니다.
+Next.js로 구축된 웹 애플리케이션으로, 사용자가 영화를 탐색하고, 세부 정보를 확인하며, 다양한 기준으로 검색하고 필터링할 수 있습니다. 이 프로젝트는 TMDB API를 활용하여 풍부한 영화 탐색 경험을 제공합니다.
 
 ## 기술 스택
 
 - **Framework:** Next.js
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **UI:** shadcn/ui (Radix UI 기반)
+- **UI:** shadcn/ui
 - **Animation:** Motion
 - **Slider:** Swiper.js
 - **Movie API:** The Movie Database (TMDb) API
@@ -17,7 +17,7 @@ Next.js로 구축된 웹 애플리케이션으로, 사용자가 영화를 탐색
 1.  저장소를 클론
 
 ```bash
-git clone https://github.com/your-username/movie-explorer.git
+git clone https://github.com/maro911220/movie.git
 cd movie-explorer
 ```
 
