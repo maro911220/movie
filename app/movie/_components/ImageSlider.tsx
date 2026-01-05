@@ -39,20 +39,8 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
 
       {/* MediaModal */}
       <MediaModal
-        totalItems={images.length}
         isOpen={selectedImage !== null}
-        currentIndex={selectedImage ?? 0}
         onClose={() => setSelectedImage(null)}
-        onPrevious={() =>
-          setSelectedImage((prev) =>
-            prev !== null && prev > 0 ? prev - 1 : prev
-          )
-        }
-        onNext={() =>
-          setSelectedImage((prev) =>
-            prev !== null && prev < images.length - 1 ? prev + 1 : prev
-          )
-        }
       >
         {selectedImage !== null && (
           <div className="relative w-full aspect-video">
