@@ -6,7 +6,7 @@ import { MediaSlider } from "./MediaSlider";
 
 // ImageSliderProps
 interface ImageSliderProps {
-  images: Array<{ src: string; alt: string }>;
+  images: Array<{ src: string; alt: string; thumbnail: string }>;
 }
 
 // ImageSlider
@@ -29,7 +29,7 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
             <Image
               fill
               sizes="100%"
-              src={image.src}
+              src={image.thumbnail}
               alt={image.alt}
               className="object-cover group-hover:scale-105 transition-transform duration-300 will-change-transform"
             />

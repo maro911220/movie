@@ -119,6 +119,7 @@ export default async function MovieDetailPage({ params }: PageProps) {
       .slice(0, 12)
       .map((img: MovieImage, i: number) => ({
         alt: `${movie.title} 스틸컷 ${i + 1}`,
+        thumbnail: `https://image.tmdb.org/t/p/w500${img.file_path}`,
         src: `https://image.tmdb.org/t/p/original${img.file_path}`,
       }));
 
