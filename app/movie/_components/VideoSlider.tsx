@@ -58,19 +58,7 @@ export const VideoSlider = ({ videos }: VideoSliderProps) => {
       {/* MediaModal */}
       <MediaModal
         isOpen={selectedVideo !== null}
-        currentIndex={selectedVideo ?? 0}
-        totalItems={videos.length}
         onClose={() => setSelectedVideo(null)}
-        onPrevious={() =>
-          setSelectedVideo((prev) =>
-            prev !== null && prev > 0 ? prev - 1 : prev
-          )
-        }
-        onNext={() =>
-          setSelectedVideo((prev) =>
-            prev !== null && prev < videos.length - 1 ? prev + 1 : prev
-          )
-        }
       >
         {selectedVideo !== null && (
           <div className="relative w-full aspect-video">
